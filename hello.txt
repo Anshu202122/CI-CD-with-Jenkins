@@ -1,1 +1,1 @@
-Hello, this is the first CI pipeline
+Hello, this is the first CI/CD pipeline
