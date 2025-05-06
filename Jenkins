@@ -2,9 +2,16 @@ pipeline {
     agent any
 
     stages {
-        stage('Print Message') {
+        stage('Build') {
             steps {
-                echo 'Hello, Jenkins!'
+                echo "Just a Simple build stage running."
+                sh 'cat hello.txt'
+            }
+        }
+
+        stage('Done') {
+            steps {
+                echo "Build complete. You can add more here later."
             }
         }
     }
